@@ -9,6 +9,8 @@ import Highlights from './components/highlights/index.jsx';
 import Pricing from './components/pricing/index.jsx';
 import Location from './components/location/index.jsx';
 
+import {Element} from 'react-scroll';
+
 
 
 const App = () => {
@@ -18,25 +20,25 @@ const App = () => {
           <Header/>
         </>
 
-        <>
+        <Element name="featured">
           <Featured />
-        </>
+        </Element>
 
-        <>
+        <Element name="venueInfo">
           <VenueInfo/>
-        </>
+        </Element>
 
-        <>
+        <Element name="highlights">
           <Highlights/>
-        </>
+        </Element>
 
-        <>
+        <Element name="pricing">
           <Pricing/>
-        </>
+        </Element>
 
-        <>
+        <Element name="location">
           <Location/>
-        </>
+        </Element>
         
         <>
           <Footer/>
